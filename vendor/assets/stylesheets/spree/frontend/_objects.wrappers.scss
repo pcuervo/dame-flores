@@ -34,7 +34,7 @@ html, body,
  * when the columns inside need gutter
 **/
 .row{
-	.clearfix;
+	@include clearfix;
 	margin-left: -5px; margin-right: -5px;
 }
 

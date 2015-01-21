@@ -1,11 +1,9 @@
 /*** MIXINS ***/
 
-@mixin font( $size: 1em, $line: 1.4em, $weight: 400, $family: ~'', $style: ~'' ){
-	font-family: $family;
+@mixin font( $size: 1em, $line: 1.4em, $weight: 400 ){
 	font-size: $size;
 	line-height: $line;
 	font-weight: $weight;
-	font-style: $style;
 }
 
 @mixin clearfix() {
@@ -95,7 +93,7 @@
 	-o-transform: 		rotateY($deg);
 }
 
-@mixin translate($x; $y) {
+@mixin translate($x, $y) {
 	-webkit-transform: translate($x, $y);
 	-ms-transform: translate($x, $y);
 	-o-transform: translate($x, $y);
@@ -105,13 +103,13 @@
 @mixin center-full() {
 	position: absolute;
 	top: 50%; left: 50%;
-	.translate(-50%, -50%);
+	@include translate(-50%, -50%);
 }
 
 @mixin center-top() {
 	position: absolute;
 	top: 50%;
-	.translate(0, -50%);
+	@include translate(0, -50%);
 }
 
 @mixin opacity-gradient() {
@@ -133,10 +131,10 @@
 \*------------------------------------*/
 
 
-@mixin img-retina($file-1x; $file-2x;) {
+@mixin img-retina($file-1x, $file-2x) {
 	background-image: url("${file-1x}");
 
-	$media
+	@media
 	only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min--moz-device-pixel-ratio: 2),
 	only screen and (-o-min-device-pixel-ratio: 2/1),

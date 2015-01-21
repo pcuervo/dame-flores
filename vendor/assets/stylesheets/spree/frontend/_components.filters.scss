@@ -1,6 +1,6 @@
 @import "_settings.global.scss";
 @import "_tools.utilities.scss";
-
+@import "_tools.mixins.scss";
 /*------------------------------------*\
     #FILTERS
 \*------------------------------------*/
@@ -10,12 +10,12 @@
 
 .tab-filter{
     padding:$unidad $unidad $unidad ($unidad/2);
-    @include font(12px, 1, 400, 'font-name'); text-transform: uppercase; color: $light; text-decoration: none;
+    @include font; text-transform: uppercase; color: $light; text-decoration: none;
     background: $dark;
     white-space: nowrap; text-overflow: ellipsis;
     overflow: hidden;
     position: relative;
-    .transition();
+    @include transition();
 }
 .tab-filter:after{
     content: '\f107';
@@ -32,7 +32,7 @@
 }
 
 
-.filters__content, .filters__content>div{ .transition(); }
+.filters__content, .filters__content>div{ @include transition(); }
 .filters__content>div{
     height: 0px; padding-bottom: 0px !important;
     overflow: hidden;
@@ -74,7 +74,7 @@
 }
 .filters__results p{
     margin-bottom: ($unidad/2);
-    @include font(16px, 1, 600, 'font-name');
+    @include font;
 }
 .filters__results .filter{
     margin-left: 2px; margin-right: 2px;

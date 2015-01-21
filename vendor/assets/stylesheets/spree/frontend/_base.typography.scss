@@ -1,5 +1,6 @@
 @import "_settings.global.scss";
 @import "_tools.utilities.scss";
+@import "_tools.mixins.scss";
 
 /*------------------------------------*\
     #FONTFACE
@@ -56,7 +57,7 @@ h1, h2, h3, h4, h5, h6{
 **/
 p{
 	margin: 0 0 1em 0;
-	@include font( 20px, 30px, normal, 'font-name' );
+	@include font;
 }
 
 

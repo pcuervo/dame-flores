@@ -1,5 +1,7 @@
 @import "_settings.global.scss";
 @import "_tools.utilities.scss";
+@import "_base.z-index.scss";
+
 
 /*------------------------------------*\
 	#HEADER
@@ -10,7 +12,7 @@ header{
 	width: 100%; height: 60px;
 	margin-bottom: $unidad;position: fixed; top: 0; left: 0;
 	background: $light;
-	.z-index-10;
+	.z-index-10{ z-index:$zIndex-10; }
 	@include transition();
 }
 .header-wrapper--fixed{ background: rgba(255, 255, 255, 0.5); }
@@ -33,6 +35,6 @@ h1{
 .trigger-cart{ top: 0; right: 0; }
 
 .bg-logo-wrapper--logo-dame-flores{
-	@include img-retina('images/logo-dame-flores.png'; 'images/logo-dame-flores@2x.png';)
+	@include img-retina('images/logo-dame-flores.png', 'images/logo-dame-flores@2x.png')
 }
 .bg-logo-wrapper--logo-dame-flores .bg-logo{ padding-bottom: 49.5%; } // height/width x 100 = X.

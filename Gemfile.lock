@@ -74,6 +74,12 @@ GIT
     spree_sample (2.4.3.beta)
       spree_core (= 2.4.3.beta)
 
+PATH
+  remote: spree_dame_flores_theme
+  specs:
+    spree_dame_flores_theme (2.4.3.beta)
+      spree_core (~> 2.4.3.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -310,6 +316,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree!
   spree_auth_devise!
+  spree_dame_flores_theme!
   spree_gateway!
   spring
   sqlite3

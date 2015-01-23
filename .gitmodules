@@ -1,0 +1,3 @@
+[submodule "app/spree_fancy"]
+	path = app/spree_fancy
+	url = https://github.com/spree-contrib/spree_fancy.git

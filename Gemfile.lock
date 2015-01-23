@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: 003416462d5a6e2321a2ab1d2804d53d032e11b7
+  revision: 72d40259c41f6738c602c0efd88792c05bab75d6
   branch: 2-4-stable
   specs:
     spree_gateway (2.4.0)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree.git
-  revision: 45bd609f4fe579a315587ae946e27c4b36b619a9
+  revision: f577a3b788d0518b7479d11adb20ca311b462726
   branch: 2-4-stable
   specs:
     spree (2.4.3.beta)
@@ -73,15 +73,6 @@ GIT
       spree_core (= 2.4.3.beta)
     spree_sample (2.4.3.beta)
       spree_core (= 2.4.3.beta)
-
-PATH
-  remote: spree_fancy
-  specs:
-    spree_fancy (1.3.0)
-      compass-rails
-      deface (~> 1.0.0rc3)
-      jquery-ui-rails
-      spree_core (>= 2.3.0.beta)
 
 GEM
   remote: https://rubygems.org/
@@ -137,7 +128,6 @@ GEM
       rails (>= 3.1, < 5.0)
     carmen (1.0.1)
       unicode_utils (~> 1.4.0)
-    chunky_png (1.3.3)
     cldr-plurals-runtime-rb (1.0.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -151,12 +141,6 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.7.5)
-    compass (0.12.7)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    compass-rails (2.0.0)
-      compass (>= 0.12.2)
     css_parser (1.3.5)
       addressable
     deface (1.0.1)
@@ -175,11 +159,10 @@ GEM
     erubis (2.7.0)
     execjs (2.2.2)
     ffaker (1.31.0)
-    font-awesome-rails (4.2.0.0)
+    font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
-    fssm (0.2.10)
     highline (1.6.21)
     hike (1.2.3)
     htmlentities (4.3.3)
@@ -210,7 +193,7 @@ GEM
       i18n (>= 0.6.4, <= 0.7.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
-    nokogiri (1.6.5)
+    nokogiri (1.6.6.1)
       mini_portile (~> 0.6.0)
     offsite_payments (2.0.1)
       active_utils (~> 2.2.0)
@@ -226,7 +209,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    paranoia (2.0.4)
+    paranoia (2.0.5)
       activerecord (~> 4.0)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
@@ -275,7 +258,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    select2-rails (3.5.9.1)
+    select2-rails (3.5.9.2)
       thor (~> 0.14)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -283,7 +266,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.2)
+    sprockets-rails (2.2.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -327,7 +310,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree!
   spree_auth_devise!
-  spree_fancy!
   spree_gateway!
   spring
   sqlite3

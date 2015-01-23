@@ -1,2 +1,12 @@
-<h1>HOLA MA</h1>
+<% if @roses %>
+	<div id="featured-products" class="row">
+		<h3>Productos</h3>
+		<hr>
+		<ul class="carousel">
+			<% @roses.each do |product| %>
+				<%= render 'product', :product => product %>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
 

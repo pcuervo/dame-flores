@@ -14,19 +14,3 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-
-
-app/spree_fancy/\#*
-app/spree_fancy/*~
-app/spree_fancy/.#*
-app/spree_fancy/.DS_Store
-app/spree_fancy/.idea
-app/spree_fancy/.project
-app/spree_fancy/.sass-cache
-app/spree_fancy/coverage
-app/spree_fancy/Gemfile.lock
-app/spree_fancy/tmp
-app/spree_fancy/nbproject
-app/spree_fancy/pkg
-app/spree_fancy/*.swp
-app/spree_fancy/spec/dummy

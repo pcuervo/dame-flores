@@ -1,0 +1,82 @@
+<div id="spree-header">
+
+  <header id="header" data-hook>
+    <div class="container">
+      <div class="row">
+        <figure id="logo" class="col-md-4" data-hook>
+          <%= logo %> <h2>JAJAJAJA</h2>
+        </figure>
+
+        <%= render :partial => 'spree/shared/nav_bar' %>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+  </div>
+
+</div>
+
+<!-- <div id="mobile-navigation">
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Inicio</a></li>
+			<li><a href="http://dame-flores.myshopify.com/pages/información">Información</a></li>
+			<li><a href="http://dame-flores.myshopify.com/pages/contacto">Contacto</a></li>
+		</ul>
+	</nav>
+</div>
+<header class="">
+	<div class="container visible-xs">
+		<div class="[ row ]">
+			<div class="[ col-xs-4 ][ menu__item ]">
+				<a id="responsive-menu-button" href="#sidr-mobile">
+					<i class="fa fa-bars fa-3x"></i>
+				</a>
+			</div>
+			<div class="[ col-xs-4 ] [ text-center ]">
+				<h1>
+					<a href="/" title="Home">
+						<%= logo %>
+					</a>
+				</h1>
+			</div>
+			<div class="[ col-xs-4 ][ right ][ text-right ][ menu__item ]">
+				<a href="#sidr" class="custom-font slide-menu">
+					<i class="fa fa-shopping-cart fa-3x"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container hidden-xs">
+		<div class="[ row ][ no-gutter ]">
+			<div class="[ col-xs-2 ][][ text-left ][ menu__item ]">
+				<a href="/" class="">
+					Inicio
+				</a>
+			</div>
+			<div class="[ col-xs-2 ][][ text-center ][ menu__item ]">
+				<a href="" class="">
+					Información
+				</a>
+			</div>
+			<div class="[ col-xs-4 ]">
+				<h1>
+					<a href="/" title="Home">
+						<%= logo %>
+					</a>
+				</h1>
+			</div>
+			<div class="[ col-xs-2 ][ ][ text-center ][ menu__item ]">
+				<a href="" class="" disabled="disabled">
+					Mi cuenta
+				</a>
+			</div>
+			<div class="[ col-xs-2 ][ ][ text-right ][ menu__item ]">
+				<a href="#sidr" class="custom-font slide-menu">
+					<i class="fa fa-shopping-cart fa-3x"></i>
+				</a>
+			</div>
+		</div>
+	</div><!-- .container -->
+<!-- </header> -->

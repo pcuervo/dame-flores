@@ -42,4 +42,5 @@ gem 'spring',        group: :development
 gem 'spree', git: 'https://github.com/spree/spree.git', branch: '2-4-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
-gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-4-stable'
+gem 'spree_fancy', :path => 'spree_fancy'
+#gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-4-stable'

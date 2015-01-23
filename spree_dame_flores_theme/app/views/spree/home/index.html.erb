@@ -1,12 +1,22 @@
-<% if @roses %>
+<div id="welcome-message">
+	<div class="container">
+		<h1>
+			Welcome to our amazing store!
+			<br>
+			Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere!</a>
+		</h1>
+	</div>
+</div>
+
+<div class="container">
+	<div class="filtros">
+		<h2>Filtros</h2>
+		<%= render partial: 'spree/shared/filters' %>
+	</div>
 	<div id="featured-products" class="row">
-		<h3>Productos</h3>
+		<h3>Featured Products</h3>
 		<hr>
 		<ul class="carousel">
-			<% @roses.each do |product| %>
-				<%= render 'product', :product => product %>
-			<% end %>
 		</ul>
 	</div>
-<% end %>
-
+</div>

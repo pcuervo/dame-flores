@@ -9,4 +9,5 @@
 //= require spree/frontend
 
 //= require_tree .
+//= require spree/dame_flores
 //= require spree/frontend/spree_i18n

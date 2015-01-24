@@ -12,7 +12,7 @@
 
 	<div class="filtros">
 		<h2>Filtros</h2>
-		<%= form_tag '/', :method => :post, class: "navbar-form" do |f| %>
+		<%= form_tag '/search', :method => :post, class: "navbar-form" do |f| %>
 			<%= render partial: 'spree/shared/filters',  :locals => {:f => f} %>
 			<%= submit_tag("Buscar", class: '[ boton ]') %>
 		<% end %>

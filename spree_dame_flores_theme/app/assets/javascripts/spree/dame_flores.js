@@ -2,9 +2,11 @@
 // the installer will append this file to the app vendored assets here: vendor/assets/javascripts/spree/frontend/all.js'
 
 //= require spree/frontend
-//= require spree/sidr
+//= require sidr
 
-// $('#responsive-menu-button').sidr({
-// 	name: 'sidr-mobile',
-// 	source: '#mobile-navigation'
-// });
+$(function(){
+	$('#responsive-menu-button').sidr({
+		name: 'sidr-mobile',
+		source: '#mobile-navigation'
+	});
+});

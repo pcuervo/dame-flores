@@ -10,12 +10,12 @@ module SpreeDameFloresTheme
       end
 
       def add_stylesheets
-        inject_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/frontend/spree_dame_flores_theme\n", :before => /\*\//, :verbose => true
-        inject_into_file 'vendor/assets/stylesheets/spree/backend/all.css', " *= require spree/backend/spree_dame_flores_theme\n", :before => /\*\//, :verbose => true
+        inject_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/dame_flores\n", :before => /\*\//, :verbose => true
+        inject_into_file 'vendor/assets/stylesheets/spree/backend/all.css', " *= require spree/dame_flores\n", :before => /\*\//, :verbose => true
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_dame_flores_theme'
+        run 'bundle exec rake railties:install:migrations FROM=dame_flores'
       end
 
       def run_migrations
@@ -26,6 +26,7 @@ module SpreeDameFloresTheme
           puts 'Skipping rake db:migrate, don\'t forget to run it!'
         end
       end
+      
     end
   end
 end

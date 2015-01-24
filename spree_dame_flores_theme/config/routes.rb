@@ -1,4 +1,4 @@
 Spree::Core::Engine.routes.draw do
   # Add your extension routes here
-  get "/search" => "home#search"
+  post "/search" => "home#search"
 end

@@ -12,22 +12,11 @@
 
 	<div class="filtros">
 		<h2>Filtros</h2>
-		<%= form_tag '/', :method => :post, class: "navbar-form" do |f| %>
+		<%= form_tag '/search', :method => :post, class: "navbar-form" do |f| %>
 			<%= render partial: 'spree/shared/filters',  :locals => {:f => f} %>
 			<%= submit_tag("Buscar", class: '[ boton ]') %>
 		<% end %>
 	</div>
-
-	<% if @products %>
-		<div id="featured-products" class="row">
-			<h3>Featured Products</h3>
-			<hr>
-			<ul class="carousel">
-				<% @products.each do |product| %>
-					<%= render 'product', :product => product %>
-				<% end %>
-			</ul>
-		</div>
-	<% end %>
+	<%= render 'product' %>
 
 </div>

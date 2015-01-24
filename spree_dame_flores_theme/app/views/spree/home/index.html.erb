@@ -9,14 +9,25 @@
 </div>
 
 <div class="container">
+
 	<div class="filtros">
 		<h2>Filtros</h2>
-		<%= render partial: 'spree/shared/filters' %>
+		<%= form_tag '/', :method => :post, class: "navbar-form" do |f| %>
+			<%= render partial: 'spree/shared/filters',  :locals => {:f => f} %>
+			<%= submit_tag("Buscar", class: '[ boton ]') %>
+		<% end %>
 	</div>
-	<div id="featured-products" class="row">
-		<h3>Featured Products</h3>
-		<hr>
-		<ul class="carousel">
-		</ul>
-	</div>
+
+	<% if @products %>
+		<div id="featured-products" class="row">
+			<h3>Featured Products</h3>
+			<hr>
+			<ul class="carousel">
+				<% @products.each do |product| %>
+					<%= render 'product', :product => product %>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
 </div>

@@ -10,3 +10,5 @@
 
 //= require_tree .
 //= require spree/backend/spree_i18n
+//= require spree/backend/spree_dame_flores_theme
+//= require spree/dame_flores

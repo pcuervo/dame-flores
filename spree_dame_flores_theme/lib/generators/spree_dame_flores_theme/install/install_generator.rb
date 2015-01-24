@@ -5,8 +5,8 @@ module SpreeDameFloresTheme
       class_option :auto_run_migrations, :type => :boolean, :default => false
 
       def add_javascripts
-        append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/frontend/spree_dame_flores_theme\n"
-        append_file 'vendor/assets/javascripts/spree/backend/all.js', "//= require spree/backend/spree_dame_flores_theme\n"
+        append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/dame_flores\n"
+        append_file 'vendor/assets/javascripts/spree/backend/all.js', "//= require spree/dame_flores\n"
       end
 
       def add_stylesheets

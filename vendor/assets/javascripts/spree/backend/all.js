@@ -11,3 +11,4 @@
 //= require_tree .
 //= require spree/backend/spree_i18n
 //= require spree/dame_flores
+//= require spree/backend/spree_paypal_express

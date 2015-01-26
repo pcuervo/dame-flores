@@ -4,4 +4,11 @@
 		<%= submit_tag("Buscar", class: '[ boton ]') %>
 	<% end %>
 </section>
-<%= render 'product' %>
+
+<% if @products %>
+	<section class="[ featured-products ]">
+		<% @products.each do |product| %>
+			<%= render 'product', :product => product %>
+		<% end %>
+	</section>
+<% end %>

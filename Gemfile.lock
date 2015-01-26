@@ -1,4 +1,20 @@
 GIT
+  remote: git://github.com/nathandao/spree_add_to_cart_ajax.git
+  revision: a03d529c592a21abb5eceb195785b4e9f712e6cf
+  branch: 2-4-stable
+  specs:
+    spree_add_to_cart_ajax (2.4.x)
+
+GIT
+  remote: git://github.com/spree-contrib/better_spree_paypal_express.git
+  revision: d9a24eb509251c6385cd4d7fb6b43019c4589f01
+  branch: 2-4-stable
+  specs:
+    spree_paypal_express (2.0.3)
+      paypal-sdk-merchant (= 1.106.1)
+      spree_core (~> 2.4.0)
+
+GIT
   remote: git://github.com/spree-contrib/spree_i18n.git
   revision: 3bd3ca824c4dcf0484795befeb726589e45353d5
   branch: 2-4-stable
@@ -235,6 +251,11 @@ GEM
       mime-types
     paranoia (2.0.5)
       activerecord (~> 4.0)
+    paypal-sdk-core (0.2.10)
+      multi_json (~> 1.0)
+      xml-simple
+    paypal-sdk-merchant (1.106.1)
+      paypal-sdk-core (~> 0.2.3)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -324,6 +345,7 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
+    xml-simple (1.1.4)
 
 PLATFORMS
   ruby
@@ -336,10 +358,12 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spree!
+  spree_add_to_cart_ajax!
   spree_auth_devise!
   spree_dame_flores_theme!
   spree_gateway!
   spree_i18n!
+  spree_paypal_express!
   spring
   sqlite3
   turbolinks

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="dameflores" horiz-adv-x="1000" >
+<font-face font-family="dameflores" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="close" unicode="&#xe800;" d="m957-93c4-4 4-10 0-14-2-2-4-3-7-3s-5 1-7 3l-443 443-443-443c-2-2-4-3-7-3s-5 1-7 3c-4 4-4 10 0 14l443 443-443 443c-4 4-4 10 0 14s10 4 14 0l443-443 443 443c4 4 10 4 14 0s4-10 0-14l-443-443 443-443z" horiz-adv-x="1000" />
+<glyph glyph-name="cart" unicode="&#xe801;" d="m764-48c-40 0-72 32-72 72 0 40 32 72 72 72s72-32 72-72c0-40-32-72-72-72z m0 124c-29 0-52-23-52-52s23-52 52-52 52 23 52 52-23 52-52 52z m-450-124c-40 0-72 32-72 72 0 40 32 72 72 72s72-32 72-72c0-40-32-72-72-72z m0 124c-29 0-52-23-52-52s23-52 52-52 52 23 52 52-23 52-52 52z m512 62h-570c-15 0-27 11-29 25l-67 557c0 2-9 8-17 8h-93v20h93c14 0 34-10 37-25l67-556c1-4 5-8 9-8h570c16 0 37 20 37 37s-20 37-37 37h-450c-27 0-57 30-57 57s30 57 57 57h481c15 0 37 10 37 37 0 16-20 37-37 37h-512c-27 0-57 30-57 57 0 27 28 57 55 57h560c16 0 37 20 37 37s-20 37-37 37h-620v20h621c27 0 57-30 57-57s-30-57-57-57h-560c-16 0-35-20-35-37 0-16 20-37 37-37h512c27 0 57-30 57-57 0-37-29-57-57-57h-482c-16 0-37-20-37-37s20-37 37-37h450c27 0 57-30 57-57s-30-58-57-58z" horiz-adv-x="1000" />
+<glyph glyph-name="menu" unicode="&#xe802;" d="m950-62h-900c-6 0-10 4-10 10s4 10 10 10h900c6 0 10-4 10-10s-4-10-10-10z m0 402h-900c-6 0-10 4-10 10s4 10 10 10h900c6 0 10-4 10-10s-4-10-10-10z m0 402h-900c-6 0-10 4-10 10s4 10 10 10h900c6 0 10-4 10-10s-4-10-10-10z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

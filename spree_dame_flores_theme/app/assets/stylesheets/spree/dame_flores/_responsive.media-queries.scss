@@ -1,6 +1,7 @@
 .shown--xmall{ display: block !important; }
 .hidden--xmall{  }
 
+.hidden--medium{ display: none !important; }
 .shown--medium{ display: none !important; }
 
 /* min-width 321px */
@@ -11,6 +12,9 @@
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
+
+	.shown--small{ display: none !important; }
+
 	.shown--medium{ display: block !important; }
 	.hidden--medium{ display: none !important; }
 }

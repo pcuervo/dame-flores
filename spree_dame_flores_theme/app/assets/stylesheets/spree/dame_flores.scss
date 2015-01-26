@@ -6,6 +6,7 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 
 
 
+
 /*------------------------------------*\
     #CONTENTS
 \*------------------------------------*/
@@ -41,6 +42,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 @import "spree/dame_flores/_base.content.scss";
 /* Typography............ Fonts, baseline. */
 @import "spree/dame_flores/_base.typography.scss";
+/* Icons............ SVG-to-Font icons. */
+@import "spree/dame_flores/_base.icons.scss";
 /* Z-index............ Organized, not a mess. */
 @import "spree/dame_flores/_base.z-index.scss";
 /* Colores............  */

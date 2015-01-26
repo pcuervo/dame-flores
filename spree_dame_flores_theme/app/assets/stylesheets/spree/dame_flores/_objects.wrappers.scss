@@ -2,20 +2,19 @@
 @import "_tools.utilities.scss";
 
 /**
- * Main containers 100% height
+ * Main containers 100% height and BG
 **/
 html, body,
-.container{
-	height: 100%;
+#wrapper{
+	min-height: 100%;
+	background: $light;
 }
 
 /**
- * These wrappers maintains the scroll and the full-height menu
+ * Padding top for the main container so the fixed header does not overlaps
 **/
-.container {
-	background: $light;
-	position: relative;
-	overflow: hidden;
+#wrapper {
+	padding-top: 60px;
 }
 
 /**

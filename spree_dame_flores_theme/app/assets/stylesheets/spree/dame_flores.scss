@@ -70,7 +70,9 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 @import "spree/dame_flores/_components.forms.scss";
 /* Filters............. Filters elements. */
 @import "spree/dame_flores/_components.filters.scss";
-/* Lightbox............ Lightbox styles. */
-@import "spree/dame_flores/_components.lightbox.scss";
 /* Tables............ Tables elements. */
 @import "spree/dame_flores/_components.tables.scss";
+/* Lightbox............ Lightbox styles. */
+@import "spree/dame_flores/_components.lightbox.scss";
+/* Sidr............ Mobile-like sider menu. */
+@import "spree/dame_flores/_components.sidr.scss";

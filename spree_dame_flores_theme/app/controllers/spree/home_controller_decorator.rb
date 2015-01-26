@@ -20,7 +20,7 @@ Spree::HomeController.class_eval do
   private
 
   def filtering_params(params)
-    params.slice(:occasion, :product, :flower)
+    params.slice(:occasion, :product, :flower, :start_price, :end_price)
   end
 
 end

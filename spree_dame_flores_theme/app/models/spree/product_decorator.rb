@@ -1,19 +1,23 @@
 Spree::Product.class_eval do
-	scope :flowers, -> (flower_tax_id) { 
-		return unless flower_tax_id != ''
-		flowers = Spree::Taxon.find(flower_tax_id) 
-		flowers.products
-	}
-	scope :occasions, -> (occasion_tax_id) { 
-		return unless occasion_tax_id != ''
-		occasions = Spree::Taxon.find(occasion_tax_id)
-		occasions.products
-	}
-	scope :advanced_search, -> (params) { 
-		logger.debug 'estamos aqui'
-		
+	# Advanced search based on taxonomies and price range.
+	# Params:
+	# - filters: An array containing one or more of the following (flower type, ocassion, product type, start and)
+	# 
+	scope :advanced_search, -> (filters) { 
 		filtered_product_ids = []
-		params.each do |taxon, value|
+		start_price = 0
+		end_price = 100000
+		filters.each do |key, value|
+			if key == 'start_price'
+				start_price = value
+				next
+			end
+
+			if key == 'end_price'
+				end_price = value
+				next
+			end
+
 			next if value[:id] == ''
 
 			product_ids = []
@@ -27,12 +31,18 @@ Spree::Product.class_eval do
 				filtered_product_ids = filtered_product_ids.concat(product_ids)
 				next
 			end
+			
 			filtered_product_ids = filtered_product_ids & product_ids
 		end
 
-		products = Spree::Product.where('id IN (?)', filtered_product_ids)		
+		logger.debug start_price.to_s
+		logger.debug end_price.to_s
+
+		products = Spree::Product.price_between(start_price, end_price)	
+		if ! filtered_product_ids.empty?
+			products = products.where('spree_products.id IN (?)', filtered_product_ids)
+		end
 		products
 	}
 
-	
 end

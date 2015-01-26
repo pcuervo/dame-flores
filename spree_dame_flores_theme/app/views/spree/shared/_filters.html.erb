@@ -4,4 +4,6 @@
 <%= collection_select( :product, :id, @product_types, :id, :name, { :prompt => 'Selecciona el producto'} ) %>
 <%= label_tag "flower", "Tipo de flor" %>
 <%= collection_select( :flower, :id, @flower_types, :id, :name, { :prompt => 'Selecciona tipo de flor'} ) %>
-
+<%= label_tag "price", "Rango de precio" %>
+<%= text_field_tag "start_price", nil, placeholder: "Precio inicial" %>
+<%= text_field_tag "end_price", nil, placeholder: "Precio final" %>

@@ -4,6 +4,8 @@ GIT
   branch: 2-4-stable
   specs:
     spree_add_to_cart_ajax (2.4.x)
+
+GIT
   remote: git://github.com/spree-contrib/better_spree_paypal_express.git
   revision: d9a24eb509251c6385cd4d7fb6b43019c4589f01
   branch: 2-4-stable

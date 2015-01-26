@@ -17,6 +17,17 @@
 			<%= submit_tag("Buscar", class: '[ boton ]') %>
 		<% end %>
 	</div>
-	<%= render 'product' %>
+	
+	<% if @products %>
+		<div id="featured-products" class="row">
+			<h3>Featured Products</h3>
+			<hr>
+			<ul class="carousel">
+				<% @products.each do |product| %>
+					<%= render 'product', :product => product %>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
 
 </div>

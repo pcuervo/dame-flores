@@ -10,7 +10,7 @@ Spree::HomeController.class_eval do
       flowers = Spree::Taxon.where('name = "Flores"')
     end
 
-    @flower_types = Spree::Taxon.where('parent_id = 11')
+    @flower_types = Spree::Taxon.where('name = 11')
     render :index
   end
 

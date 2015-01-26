@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/nathandao/spree_add_to_cart_ajax.git
+  revision: a03d529c592a21abb5eceb195785b4e9f712e6cf
+  branch: 2-4-stable
+  specs:
+    spree_add_to_cart_ajax (2.4.x)
+      spree_core (~> 2.4.0)
+
+GIT
   remote: git://github.com/spree-contrib/spree_i18n.git
   revision: 3bd3ca824c4dcf0484795befeb726589e45353d5
   branch: 2-4-stable
@@ -336,6 +344,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spree!
+  spree_add_to_cart_ajax!
   spree_auth_devise!
   spree_dame_flores_theme!
   spree_gateway!

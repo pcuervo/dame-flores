@@ -1,11 +1,14 @@
 @charset 'utf-8';
 
-/*** COLORS ***/
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
 
-$light: 			#fff;    //blanco
-$highlight:			#1aa2dc; //azul
-$dark: 				#343434; //gris-obscuro
-$light-dark: 		#b2b2b2; //gris-light
+$light: 			#fff;    //white
+$primary:			#EE6178; //pink
+$highlight:			#44A3CC; //blue
+$dark: 				#414042; //grey text
+//$light-dark: 		#b2b2b2; //gris-light
 
 $twitter: 		#2aa8df;
 $facebook: 		#3c5a97;
@@ -15,6 +18,11 @@ $linkedin: 		#007bb6;
 
 $warning: 		#e74c3c;
 
-/*** MEDIDAS ***/
+
+
+
+/*------------------------------------*\
+    #MEDIDAS
+\*------------------------------------*/
 
 $unidad: 		20px;

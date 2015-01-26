@@ -1,23 +1,23 @@
-<li>
-    <div class="product-image">
-        <%= link_to product_image(product), product %>
-    </div>
-    <%= link_to truncate(product.name, :length => 50), product, :class => 'product-name', :title => product.name %>
-        <div class="product-info">
-            <div class="product-description">
-            <%= product.description.to_s.html_safe %>
-        </div>
-        <div class="product-order-form">
-            <%= form_for :order, :url => populate_orders_path do |f| %>
-                <span class="product-price">
-                    <%= product.display_price %>
-                </span>
-                <%= number_field_tag :quantity, 1, :class => 'title', :in => 1..Spree::Stock::Quantifier.new(product.master).total_on_hand, :min => 1 %>
-                <%= hidden_field_tag :variant_id, product.master.id %>
-                <%= button_tag :id => 'add-to-cart-button', :type => :submit do %>
-                <%= content_tag(:i, '', :class => 'icon-plus') + " " + Spree.t(:add_to_cart) %>
-            <% end %>
-        <% end %>
-        </div>
-    </div>
-</li>
+<article>
+	<div class="product-image">
+		<%= link_to product_image(product), product %>
+	</div>
+	<%= link_to truncate(product.name, :length => 50), product, :class => 'product-name', :title => product.name %>
+		<div class="product-info">
+			<div class="product-description">
+			<%= product.description.to_s.html_safe %>
+		</div>
+		<div class="product-order-form">
+			<%= form_for :order, :url => populate_orders_path do |f| %>
+				<span class="product-price">
+					<%= product.display_price %>
+				</span>
+				<%= number_field_tag :quantity, 1, :class => 'title', :in => 1..Spree::Stock::Quantifier.new(product.master).total_on_hand, :min => 1 %>
+				<%= hidden_field_tag :variant_id, product.master.id %>
+				<%= button_tag :id => 'add-to-cart-button', :type => :submit do %>
+				<%= content_tag(:i, '', :class => 'icon-plus') + " " + Spree.t(:add_to_cart) %>
+			<% end %>
+		<% end %>
+		</div>
+	</div>
+</article>

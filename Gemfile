@@ -45,4 +45,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
 
 gem 'spree_dame_flores_theme', :path => 'spree_dame_flores_theme'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '2-4-stable'
+
+gem 'spree_add_to_cart_ajax', github: 'nathandao/spree_add_to_cart_ajax', branch: '2-4-stable'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-4-stable'
+

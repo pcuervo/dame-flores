@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150123231837) do
+ActiveRecord::Schema.define(version: 20150127191647) do
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -101,6 +101,19 @@ ActiveRecord::Schema.define(version: 20150123231837) do
   add_index "spree_calculators", ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type"
   add_index "spree_calculators", ["id", "type"], name: "index_spree_calculators_on_id_and_type"
 
+  create_table "spree_conekta_payments", force: true do |t|
+    t.string   "payment_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "payment_method_id"
+    t.integer  "user_id"
+  end
+
+  add_index "spree_conekta_payments", ["payment_method_id"], name: "index_spree_conekta_payments_on_payment_method_id"
+  add_index "spree_conekta_payments", ["user_id"], name: "index_spree_conekta_payments_on_user_id"
+
   create_table "spree_configurations", force: true do |t|
     t.string   "name"
     t.string   "type",       limit: 50
@@ -134,6 +147,7 @@ ActiveRecord::Schema.define(version: 20150123231837) do
     t.integer  "user_id"
     t.integer  "payment_method_id"
     t.boolean  "default",                     default: false, null: false
+    t.integer  "installments_number"
   end
 
   add_index "spree_credit_cards", ["address_id"], name: "index_spree_credit_cards_on_address_id"

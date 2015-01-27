@@ -2,16 +2,25 @@ Spree::HomeController.class_eval do
 
   def index
     @products = Spree::Product.all
-    @flower_types = Spree::Taxon.where('parent_id = 11')
+
+    @occasion_types = Spree::Taxon.occasion_types
+    @product_types = Spree::Taxon.product_types
+    @flower_types = Spree::Taxon.flower_types
   end
 
   def search
-    if params[:flower][:id]
-      flowers = Spree::Taxon.where('name = "Flores"')
-    end
+    @occasion_types = Spree::Taxon.occasion_types
+    @product_types = Spree::Taxon.product_types
+    @flower_types = Spree::Taxon.flower_types
 
-    @flower_types = Spree::Taxon.where('parent_id = 11')
+    @products = Spree::Product.advanced_search(filtering_params(params))
     render :index
+  end
+
+  private
+
+  def filtering_params(params)
+    params.slice(:occasion, :product, :flower, :start_price, :end_price)
   end
 
 end

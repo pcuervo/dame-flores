@@ -1,22 +1,14 @@
-<div id="welcome-message">
-	<div class="container">
-		<h1>
-			Welcome to our amazing store!
-			<br>
-			Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere!</a>
-		</h1>
-	</div>
-</div>
+<section class="filtros">
+	<%= form_tag '/search', :method => :post, class: "navbar-form" do |f| %>
+		<%= render partial: 'spree/shared/filters',  :locals => {:f => f} %>
+		<%= submit_tag("Buscar", class: '[ boton ]') %>
+	<% end %>
+</section>
 
-<div class="container">
-
-	<div class="filtros">
-		<h2>Filtros</h2>
-		<%= form_tag '/search', :method => :post, class: "navbar-form" do |f| %>
-			<%= render partial: 'spree/shared/filters',  :locals => {:f => f} %>
-			<%= submit_tag("Buscar", class: '[ boton ]') %>
+<% if @products %>
+	<section class="[ featured-products ]">
+		<% @products.each do |product| %>
+			<%= render 'product', :product => product %>
 		<% end %>
-	</div>
-	<%= render 'product' %>
-
-</div>
+	</section>
+<% end %>

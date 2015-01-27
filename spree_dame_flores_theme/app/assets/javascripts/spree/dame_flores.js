@@ -14,8 +14,7 @@ $(function(){
 	* sidr
 	**/
 	$('#responsive-menu-button').sidr({
-		name: 'sidr-mobile',
-		source: '#mobile-navigation'
+		name: 'sidr-mobile'
 	});
 
 
@@ -25,9 +24,6 @@ $(function(){
 	/*------------------------------------*\
 		#ON LOAD
 	\*------------------------------------*/
-	consolelog('lljvfkhweqcd');
-
-
 
 
 	/*------------------------------------*\

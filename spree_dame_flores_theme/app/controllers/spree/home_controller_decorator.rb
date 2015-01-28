@@ -3,9 +3,7 @@ Spree::HomeController.class_eval do
   def index
     @products = Spree::Product.all
 
-    @occasion_types = Spree::Taxon.occasion_types
-    @product_types = Spree::Taxon.product_types
-    @flower_types = Spree::Taxon.flower_types
+    
   end
 
   def search
